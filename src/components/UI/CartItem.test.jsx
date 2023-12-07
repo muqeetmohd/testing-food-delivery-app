@@ -63,7 +63,7 @@ describe('CartItem Component', () => {
     // Simulate clicking the "+" button
     fireEvent.click(screen.getByText('+'));
     
-    // Assert that addItem function from CartContext was called
+    // Verify if the fn has been called
     expect(mockCartValue.addItem).toHaveBeenCalledWith(mockCartItem.itemClone);
   });
 
