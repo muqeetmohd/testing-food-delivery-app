@@ -34,7 +34,6 @@ describe('Cart Component', () => {
     it('renders without crashing', () => {
       // Render the component and verify if it renders without error
     
-      // In your test file, before rendering the component
 jest.mock('react-dom', () => ({
     ...jest.requireActual('react-dom'),
     createPortal: (node) => node,
